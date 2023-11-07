@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="@jvicente_20">
+  <meta name="description"
+    content="Evaluación 2 - Seguridad de la Información consiste en un formulario de login vulnerable a inyecciones SQL, conectado a un motor de base de datos MARIADB.">
+  <link rel="stylesheet" href="../assets/main.css" type="text/css">
+  <title>Evaluación 2 - Seguridad de la Información</title>
+</head>
+
+<body>
+  <main id="main">
+    <header class="main-header">
+      <span class="title-container">
+        <h1>Evaluación 2 - Seguridad de la Información</h1>
+      </span>
+      <div class="author-banner">
+        <h3>Autor: Vicente Jorquera</h3>
+      </div>
+    </header>
+    <section class='form-section'>
+      <article class='article-form'>
+        <header class="form-header">
+          <h3>Iniciar sesión</h3>
+          <p>Inicie sesión para visualizar la información de la tabla Usuarios</p>
+        </header>
+        <form id="login-form">
+          <label class="form-label">
+            Correo electrónico:
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" required>
+          </label>
+          <label class="form-label">
+            Contraseña:
+            <input type="password" name="password" id="password" placeholder="Contraseña"
+              autocomplete="current-password" required>
+          </label>
+          <button type="submit" id="login-btn">Iniciar Sesión</button>
+        </form>
+        <div id="message" class='hidden'>
+          <h3 id="messageText"></h3>
+          <span id="authspan"></span>
+        </div>
+      </article>
+      <table border="1">
+        <thead>
+          <tr class="tr-header">
+            <th colspan="7">AQUÍ SE MOSTRARÁN LOS DATOS SI INICIA SESIÓN CORRECTAMENTE</th>
+          </tr>
+          <tr>
+            <th>RUT</th>
+            <th>Nombre</th>
+            <th>Apellido P</th>
+            <th>Apellido M</th>
+            <th>Email</th>
+            <th>Movil</th>
+            <th>Password</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="../scripts/main.js" type="application/javascript"></script>
+</body>
+
+</html>

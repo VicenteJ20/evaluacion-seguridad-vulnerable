@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: #00141d;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  background: #1c2a32;
+  color: #fff;
+}
+
+.title-container {
+  padding: 2rem;
+}
+
+.author-banner {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #061f2b;
+  width: 100%;
+}
+
+.author-banner > h3 {
+  font-weight: 300;
+}
+
+.form-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: min-content;
+  color: #fff;
+  min-height: 25vh;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.article-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+  height: fit-content !important;
+  background-color: #0077b6;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.form-header > h3 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.form-header > p {
+  font-size: 1.3rem;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label > input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+#login-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  outline: none;
+  background-color: #1c2a32;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#login-btn:hover {
+  background-color: #061f2b;
+  color: white;
+}
+
+/* MENSAJE DE ESTADO */
+
+.hidden {
+  display: none !important;
+}
+
+.success {
+  background-color: green !important;
+}
+
+.error {
+  background-color: red !important;
+}
+
+#message {
+  position: absolute;
+  top: 2rem;
+  left: 40%;
+  width: 30rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* TABLA CON RESULTADOS */
+
+.tr-header {
+  padding: 1rem;
+}
+
+.nowrap {
+  white-space: nowrap;
+  width: fit-content;
+  word-wrap: nowrap;
+}
+
+.bg-success {
+  background-color: #0077b6;
+}
